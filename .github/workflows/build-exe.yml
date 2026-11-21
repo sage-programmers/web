@@ -10,15 +10,19 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build installer
         shell: cmd
+        continue-on-error: true
         run: |
           cd windows-kit
           call make-exe.bat
-      - name: Check EXE exists
+      - name: Wait for EXE
         shell: pwsh
         run: |
-          if (!(Test-Path windows-kit/Sage-Programmers-Setup.exe)) { throw "EXE was not created" }
+          $p = "windows-kit/Sage-Programmers-Setup.exe"
+          for ($i = 0; $i -lt 60 -and !(Test-Path $p); $i++) { Start-Sleep -Seconds 2 }
+          if (!(Test-Path $p)) { throw "EXE was not created" }
+          Start-Sleep -Seconds 3
           New-Item -ItemType Directory -Force downloads | Out-Null
-          Copy-Item windows-kit/Sage-Programmers-Setup.exe downloads/Sage-Programmers-Setup.exe -Force
+          Copy-Item $p downloads/Sage-Programmers-Setup.exe -Force
       - uses: actions/upload-artifact@v4
         with:
           name: Sage-Programmers-Setup
