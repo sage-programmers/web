@@ -20,12 +20,12 @@ h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;margin:0}
 a{color:inherit}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .wrap{max-width:1120px;margin:auto;padding:0 1.25rem}
-header{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff}
+header{position:sticky;top:0;z-index:5;background:#fff;color:var(--navy);border-bottom:1px solid #d9e2f7}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 .brand{display:flex;align-items:center;gap:.6rem;font:800 1.2rem 'Bricolage Grotesque';text-decoration:none}
-.brand img{width:36px;height:36px;border-radius:9px}
+.brand img{height:46px;width:auto;display:block}
 nav a{margin-left:1.4rem;text-decoration:none;font-weight:500;font-size:.95rem}
-nav a:hover{color:var(--gold)}
+nav a:hover{color:var(--blue)} nav a.btn:hover{color:#0a1233}
 .btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
 .gold{background:var(--gold);color:#0a1233}.gold:hover{filter:brightness(1.07)}
 .ghost{border-color:#fff;color:#fff}
@@ -63,6 +63,9 @@ h2{font-size:clamp(2rem,4.5vw,3.2rem);letter-spacing:-.02em}
 form{display:grid;gap:.8rem}
 label{font-size:.9rem;color:#cdd8ff}
 input,textarea,select{width:100%;padding:.8rem 1rem;border-radius:10px;border:1px solid #3a4c9a;background:#0e1c5c;color:#fff;font:inherit}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:20;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px #0006;text-decoration:none}
+.wa:hover{filter:brightness(1.08)}
+.wa svg{width:32px;height:32px}
 footer{background:#050c2e;color:#9fb0e6;text-align:center;padding:1.6rem 1rem;font-size:.9rem}
 .hide{display:none}
 @media(max-width:860px){.hero .wrap,.contact .wrap{grid-template-columns:1fr}.services,.dl{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}nav a:not(.keep){display:none}}
@@ -71,7 +74,7 @@ footer{background:#050c2e;color:#9fb0e6;text-align:center;padding:1.6rem 1rem;fo
 </head>
 <body>
 <header><div class="wrap">
-  <a class="brand" href="#top"><img src="assets/icon-192.png" alt="">Sage Programmers</a>
+  <a class="brand" href="#top"><img src="assets/logo.png" alt="Sage Programmers"></a>
   <nav><a href="#services">Services</a><a href="#apps">Apps</a><a href="#why">Why us</a><a class="keep btn gold" href="#contact" style="padding:.5rem 1.1rem">Get in touch</a></nav>
 </div></header>
 
@@ -133,7 +136,7 @@ footer{background:#050c2e;color:#9fb0e6;text-align:center;padding:1.6rem 1rem;fo
     <p style="color:#cdd8ff;margin:1rem 0 1.5rem">Send a message or reach us directly.</p>
     <a class="l" href="tel:+254729774487">+254 729 774 487</a>
     <a class="l" href="tel:+15716843125">+1 571 684 3125</a>
-    <a class="l" href="https://wa.me/254729774487">Chat on WhatsApp</a>
+    <a class="l" href="https://wa.me/254729774487?text=Hi%2C%20I%20need%20a%20website">Chat on WhatsApp</a>
     <a class="l" href="mailto:info@sageprogrammers.co.ke">info@sageprogrammers.co.ke</a>
   </div>
   <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
