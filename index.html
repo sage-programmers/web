@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sage Programmers | Websites, Apps and POS Software in Kenya</title>
+<meta name="description" content="Sage Programmers builds websites, portfolios, phone and computer apps, and receipt/POS systems for business, school and personal use.">
+<meta name="theme-color" content="#0b1a4f">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b1a4f;--ink:#0a1233;--blue:#1f6feb;--sky:#e8f0ff;--gold:#ffc21a;--bg:#f7f9ff;--card:#fff;--muted:#475079;--line:#d9e2f7}
+@media (prefers-color-scheme:dark){:root{--bg:#070d27;--card:#0e1740;--ink:#f1f5ff;--muted:#a9b6e0;--line:#223070;--sky:#12205a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:400 1.05rem/1.6 Figtree,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1120px;margin:auto;padding:0 1.25rem}
+header{position:sticky;top:0;z-index:5;background:var(--navy);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.6rem;font:800 1.2rem 'Bricolage Grotesque';text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:9px}
+nav a{margin-left:1.4rem;text-decoration:none;font-weight:500;font-size:.95rem}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;font-family:inherit}
+.gold{background:var(--gold);color:#0a1233}.gold:hover{filter:brightness(1.07)}
+.ghost{border-color:#fff;color:#fff}
+.hero{background:radial-gradient(900px 500px at 85% 0,#1f6feb 0,transparent 60%),var(--navy);color:#fff;padding:5rem 0 4.5rem;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);font-weight:800;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:34rem;color:#cdd8ff;font-size:1.15rem;margin:1.4rem 0 2rem}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap}
+.code{background:#050c2e;border:1px solid #2a3a85;border-radius:14px;font:.9rem/1.7 ui-monospace,Consolas,monospace;padding:1.2rem 1.3rem;box-shadow:0 30px 60px -20px #000a}
+.code i{font-style:normal;color:#7aa7ff}.code b{color:var(--gold);font-weight:400}.code s{text-decoration:none;color:#6f7fb8}
+.dots{display:flex;gap:6px;margin-bottom:.8rem}.dots span{width:10px;height:10px;border-radius:50%;background:#2a3a85}
+.caret{display:inline-block;width:8px;height:1em;background:var(--gold);vertical-align:-2px;animation:b 1s steps(2) infinite}
+@keyframes b{50%{opacity:0}}
+section{padding:5rem 0}
+.sub{color:var(--muted);max-width:36rem;margin:.8rem 0 2.5rem}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);letter-spacing:-.02em}
+.services{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--line);gap:1px}
+.svc{background:var(--card);padding:2rem}
+.svc h3{font-size:1.5rem;margin:.9rem 0 .4rem}.svc p{margin:0;color:var(--muted)}
+.ic{width:46px;height:46px;border-radius:12px;background:var(--navy);display:grid;place-items:center}
+.ic svg{width:24px;height:24px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.apps{background:var(--sky)}
+.dl{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+.dcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.6rem;display:flex;flex-direction:column;gap:.5rem}
+.dcard h3{font-size:1.35rem}.dcard p{margin:0 0 .8rem;color:var(--muted);flex:1;font-size:.97rem}
+.dcard .btn{background:var(--navy);color:#fff;text-align:center}.dcard .btn:hover{background:var(--blue)}
+.note{font-size:.88rem;color:var(--muted);margin-top:1.2rem}
+.why{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem}
+.why div{border-top:3px solid var(--gold);padding-top:.8rem;font-weight:600}
+.why span{display:block;font-weight:400;color:var(--muted);font-size:.92rem}
+.contact{background:var(--navy);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.contact a.l{display:block;font-size:1.15rem;margin:.5rem 0;text-decoration:none}.contact a.l:hover{color:var(--gold)}
+form{display:grid;gap:.8rem}
+label{font-size:.9rem;color:#cdd8ff}
+input,textarea,select{width:100%;padding:.8rem 1rem;border-radius:10px;border:1px solid #3a4c9a;background:#0e1c5c;color:#fff;font:inherit}
+footer{background:#050c2e;color:#9fb0e6;text-align:center;padding:1.6rem 1rem;font-size:.9rem}
+.hide{display:none}
+@media(max-width:860px){.hero .wrap,.contact .wrap{grid-template-columns:1fr}.services,.dl{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}nav a:not(.keep){display:none}}
+@media(prefers-reduced-motion:reduce){.caret{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><img src="assets/icon-192.png" alt="">Sage Programmers</a>
+  <nav><a href="#services">Services</a><a href="#apps">Apps</a><a href="#why">Why us</a><a class="keep btn gold" href="#contact" style="padding:.5rem 1.1rem">Get in touch</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Your vision.<br><em>Our code.</em></h1>
+    <p>Websites, apps and smart receipt systems for businesses, schools and individuals. Built fast, built to last, priced fairly.</p>
+    <div class="cta"><a class="btn gold" href="#contact">Start your project</a><a class="btn ghost" href="#apps">Download our apps</a></div>
+  </div>
+  <div class="code" aria-hidden="true">
+    <div class="dots"><span></span><span></span><span></span></div>
+    <s>// sage.config</s><br>
+    <i>const</i> you = { idea: <b>"big"</b>, budget: <b>"fair"</b> };<br>
+    <i>const</i> team = <b>"Sage Programmers"</b>;<br>
+    <i>build</i>(you, team);<br>
+    <s>// innovate. develop. empower.</s><br>
+    &gt; shipped <span class="caret"></span>
+  </div>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>What we build</h2>
+  <p class="sub">Four services, one team. Tell us what you need and we will scope it with you.</p>
+  <div class="services">
+    <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3>Website building</h3><p>Modern, fast and responsive websites for your business, brand or organization.</p></div>
+    <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-5 15-5 16 0"/></svg></div><h3>Personal portfolios</h3><p>Show your skills, work and achievements with a portfolio that gets you noticed.</p></div>
+    <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="12" height="9" rx="1"/><rect x="16" y="9" width="5" height="10" rx="1"/><path d="M6 19h6"/></svg></div><h3>Phone and computer apps</h3><p>Custom apps for businesses and personal use on Android, Windows and the web.</p></div>
+    <div class="svc"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4v-8h16v8h-2M7 14h10v7H7z"/></svg></div><h3>Receipt applications</h3><p>Smart POS and receipt systems for shops, businesses and events.</p></div>
+  </div>
+</div></section>
+
+<section id="apps" class="apps"><div class="wrap">
+  <h2>Get Sage apps</h2>
+  <p class="sub">Install Sage POS on your phone or computer. It works for shops, events and small businesses.</p>
+  <div class="dl">
+    <div class="dcard"><h3>Android</h3><p>Download the APK and install it on your phone. Allow installs from this source when Android asks.</p><a class="btn" href="downloads/SagePOS.apk" download>Download APK</a></div>
+    <div class="dcard"><h3>Windows</h3><p>Download the installer for Windows 10 and 11. Run it and follow the steps.</p><a class="btn" href="downloads/SagePOS-Setup.exe" download>Download EXE</a></div>
+    <div class="dcard"><h3>Install from browser</h3><p>No download needed. Add Sage to your home screen or desktop and it opens like an app.</p><a class="btn" href="#" id="install">Install web app</a></div>
+  </div>
+  <p class="note" id="installnote">Web install works in Chrome, Edge and Samsung Internet. On iPhone use Share, then Add to Home Screen.</p>
+</div></section>
+
+<section id="why"><div class="wrap">
+  <h2>Why work with us</h2>
+  <p class="sub">We keep it simple: reliable software, clear prices, and someone who answers the phone.</p>
+  <div class="why">
+    <div>Fast and reliable<span>Solutions that load quickly and run every day.</span></div>
+    <div>Secure and scalable<span>Systems that grow with you.</span></div>
+    <div>Dedicated support<span>Help when you need it.</span></div>
+    <div>Tailored to you<span>Built around how you work.</span></div>
+    <div>Affordable and professional<span>Fair pricing, clean delivery.</span></div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div>
+    <h2>Let's build something great together</h2>
+    <p style="color:#cdd8ff;margin:1rem 0 1.5rem">Send a message or reach us directly.</p>
+    <a class="l" href="tel:+254729774487">+254 729 774 487</a>
+    <a class="l" href="tel:+15716843125">+1 571 684 3125</a>
+    <a class="l" href="https://wa.me/254729774487">Chat on WhatsApp</a>
+    <a class="l" href="mailto:info@sageprogrammers.co.ke">info@sageprogrammers.co.ke</a>
+  </div>
+  <form name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <p class="hide"><label>Leave empty <input name="bot-field"></label></p>
+    <div><label for="n">Your name</label><input id="n" name="name" required autocomplete="name"></div>
+    <div><label for="e">Email or phone</label><input id="e" name="contact" required></div>
+    <div><label for="s">What do you need?</label>
+      <select id="s" name="service"><option>Website</option><option>Portfolio</option><option>Phone or computer app</option><option>Receipt / POS system</option><option>Something else</option></select></div>
+    <div><label for="m">Tell us about your project</label><textarea id="m" name="message" rows="4" required></textarea></div>
+    <button class="btn gold" type="submit">Send message</button>
+  </form>
+</div></section>
+</main>
+<footer>&copy; <span id="y"></span> Sage Programmers. ...Innovate, Develop, Empower.</footer>
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+let dp;const b=document.getElementById('install'),n=document.getElementById('installnote');
+addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e});
+b.addEventListener('click',async e=>{e.preventDefault();if(dp){dp.prompt();await dp.userChoice;dp=null}else{n.style.fontWeight='600'}});
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script>
+</body>
+</html>
