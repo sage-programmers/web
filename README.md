@@ -8,5 +8,5 @@ Static site (HTML/CSS/JS) with PWA install, contact form (Netlify Forms) and dow
 4. Forms: Netlify > Forms to read messages; add email notifications under Forms > Settings.
 
 ## APK and EXE
-Put `SagePOS.apk` and `SagePOS-Setup.exe` in `downloads/`.
+Put `Sage-Programmers.apk` and `Sage-Windows.zip` in `downloads/`.
 No code is needed to get a first version: go to pwabuilder.com, enter your Netlify URL, and download the Android package and Windows package.
